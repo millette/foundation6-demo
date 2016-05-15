@@ -40,11 +40,6 @@ foundation new --framework sites --template zurb
 
 The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
 
-Use the following command to watch file changes and open your browser:
-```bash
-foundation watch
-```
-
 ### Manual Setup
 
 To manually set up the template, first download it with Git:
@@ -66,5 +61,12 @@ Finally, run `npm start` to run Gulp. Your finished site will be created in a fo
 ```
 http://localhost:8000
 ```
+
+For some reason, running gulp direction won't work, but this will:
+
+```bash
+foundation watch
+```
+
 
 To create compressed, production-ready assets, run `npm run build`.
