@@ -1,8 +1,8 @@
 {
-  "name": "foundation-ssg",
-  "version": "1.0.0",
+  "name": "foundation6-demo",
+  "version": "0.0.1",
   "authors": [
-    "ZURB <foundation@zurb.com>"
+    "Robin Millette <robin@millette.info>"
   ],
   "description": "Static site generator for Foundation for Sites.",
   "main": "gulpfile.js",
@@ -17,6 +17,5 @@
   "dependencies": {
     "foundation-sites": "~6.2.1",
     "motion-ui": "~1.2.2"
-  },
-  "private": true
+  }
 }
