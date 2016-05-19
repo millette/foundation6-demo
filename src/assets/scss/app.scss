@@ -22,3 +22,8 @@ body {
     }
   }
 }
+
+.callout:hover {
+  @include mui-animation(wiggle(1deg));
+  animation-duration: 0.3s;
+}
