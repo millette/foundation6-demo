@@ -1,6 +1,20 @@
 # ZURB Template
 [![Dependency Status](https://gemnasium.com/badges/github.com/millette/foundation6-demo.svg)](https://gemnasium.com/github.com/millette/foundation6-demo)
 
+## Demo notes
+
+```sh
+$ git clone ...
+$ npm install
+$ bower install
+$ npm start # Will launch a browser or create a new tab with dev site in it.
+# You can now edit files like src/pages/index.html or src/assets/scss/app.scss
+# CTRL-C to stop
+$ npm run build # Build production files in dist/
+```
+
+## Original README
+
 This is a fork of the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
