@@ -27,3 +27,39 @@ body {
   @include mui-animation(wiggle(1deg));
   animation-duration: 0.3s;
 }
+
+dl.inline-dl {
+  float: left;
+  dt {
+    width: 8rem;
+  }
+
+  dd, dt {
+    float: left;
+    margin-right: 0.5rem;
+  }
+
+  dd + dt {
+    clear: left
+  }
+}
+
+.clearfix {
+  clear: left;
+}
+
+/* from http://stackoverflow.com/a/5700946/1154755
+dl.inline dt, dl.inline dd {
+    float: left;
+    margin: 0 0.5em 0 0;
+    background: #ccc
+}
+
+dl.inline dd + dt, dl.inline dd + dd {
+    clear: left
+}
+
+dl.inline dd + dd {
+    float: none
+}
+*/
