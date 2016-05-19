@@ -17,6 +17,6 @@
   "dependencies": {
     "foundation-sites": "~6.2.1",
     "motion-ui": "~1.2.2",
-    "wow": "wowjs#^1.1.2"
+    "wow": "~1.1.2"
   }
 }
