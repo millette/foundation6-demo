@@ -55,6 +55,7 @@ PATHS:
     #- "bower_components/foundation-sites/js/foundation.tabs.js"
     #- "bower_components/foundation-sites/js/foundation.toggler.js"
     #- "bower_components/foundation-sites/js/foundation.tooltip.js"
+    - "bower_components/wow/dist/wow.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"

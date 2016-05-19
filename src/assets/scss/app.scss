@@ -28,6 +28,27 @@ body {
   animation-duration: 0.3s;
 }
 
+.animate-fade-in {
+  @include mui-animation(fade);
+  animation-duration: 1s;
+}
+
+/* from http://stackoverflow.com/a/5700946/1154755
+dl.inline dt, dl.inline dd {
+    float: left;
+    margin: 0 0.5em 0 0;
+    background: #ccc
+}
+
+dl.inline dd + dt, dl.inline dd + dd {
+    clear: left
+}
+
+dl.inline dd + dd {
+    float: none
+}
+*/
+
 dl.inline-dl {
   float: left;
   dt {
@@ -47,19 +68,3 @@ dl.inline-dl {
 .clearfix {
   clear: left;
 }
-
-/* from http://stackoverflow.com/a/5700946/1154755
-dl.inline dt, dl.inline dd {
-    float: left;
-    margin: 0 0.5em 0 0;
-    background: #ccc
-}
-
-dl.inline dd + dt, dl.inline dd + dd {
-    clear: left
-}
-
-dl.inline dd + dd {
-    float: none
-}
-*/
