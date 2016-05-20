@@ -1,10 +1,18 @@
 'use strict'
 
 $(() => {
-  const wow = new WOW()
-
-  wow.init()
+  // Not so friendly with the bottom sticky footer (aka top-bar)
+  // const wow = new WOW()
+  // wow.init()
   $(document).foundation()
+
+  $('[data-sticky-container]').on('sticky.zf.stuckto:bottom', () => {
+    console.log('sticking')
+  })
+
+  $('[data-sticky-container]').on('sticky.zf.unstuckfrom:bottom', () => {
+    console.log('unsticking')
+  })
 
   var initalized = false
 
