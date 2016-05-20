@@ -28,9 +28,8 @@ PATHS:
     - "bower_components/motion-ui/src"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
-    # Polyfills (how can these two add 1 MiB to the js???)
-    #- "bower_components/fetch/fetch.js"
-    #- "bower_components/es6-promise/promise.js"
+    - "bower_components/fetch/fetch.js"
+    - "bower_components/es6-promise/promise.js"
     # Libraries requried by Foundation
     - "bower_components/jquery/dist/jquery.js"
     - "bower_components/what-input/what-input.js"
