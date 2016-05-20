@@ -2,10 +2,13 @@
 
 $(() => {
   // Not so friendly with the bottom sticky footer (aka top-bar)
-  // const wow = new WOW()
-  // wow.init()
+  const wow = new WOW()
+  wow.init()
+
+  // We'll do this after vega renders
   $(document).foundation()
 
+/*
   $('[data-sticky-container]').on('sticky.zf.stuckto:bottom', () => {
     console.log('sticking')
   })
@@ -13,6 +16,7 @@ $(() => {
   $('[data-sticky-container]').on('sticky.zf.unstuckfrom:bottom', () => {
     console.log('unsticking')
   })
+*/
 
   var initalized = false
 
@@ -54,9 +58,7 @@ $(() => {
     .then((json) => {
       const spec = {
         description: 'A simple bar chart with embedded data.',
-        data: {
-          values: json
-        },
+        data: { values: json },
         transform: {filter: 'datum.public_repos > 20'},
         mark: 'bar',
         encoding: {
@@ -64,26 +66,23 @@ $(() => {
             field: 'public_repos',
             bin: { maxbins: 40 },
             type: 'quantitative'
-            // type: 'ordinal'
           },
           y: {
-            aggregate: 'count', field: '*', type: 'quantitative'
+            aggregate: 'count',
+            field: '*',
+            type: 'quantitative'
           }
         }
       }
 
       const spec2 = {
         description: 'A simple bar chart with embedded data.',
-        data: {
-          values: json
-        },
+        data: { values: json },
         transform: {filter: 'datum.members > 5'},
         mark: 'bar',
         encoding: {
           x: {
             field: 'members',
-            // bin: { maxbins: 20 },
-            // type: 'quantitative'
             type: 'ordinal'
           },
           y: {
