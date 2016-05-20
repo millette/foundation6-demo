@@ -51,5 +51,6 @@
   "bugs": {
     "url": "https://github.com/millette/foundation6-demo/issues",
     "email": "robin@millette.info"
-  }
+  },
+  "dependencies": {}
 }

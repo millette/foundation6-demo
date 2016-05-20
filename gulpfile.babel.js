@@ -26,7 +26,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy, vendor), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -43,6 +43,12 @@ function clean(done) {
 function copy() {
   return gulp.src(PATHS.assets)
     .pipe(gulp.dest(PATHS.dist + '/assets'));
+}
+
+// Copy vendor files
+function vendor() {
+  return gulp.src(PATHS.vendor)
+    .pipe(gulp.dest(PATHS.dist + '/assets/js/vendor'));
 }
 
 // Copy page templates into finished HTML files

@@ -28,6 +28,9 @@ PATHS:
     - "bower_components/motion-ui/src"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
+    # Polyfills
+    - "bower_components/fetch/fetch.js"
+    - "bower_components/es6-promise/promise.js"
     # Libraries requried by Foundation
     - "bower_components/jquery/dist/jquery.js"
     - "bower_components/what-input/what-input.js"
@@ -59,3 +62,9 @@ PATHS:
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
+  # Faster not to build these
+  vendor:
+    - "bower_components/d3/d3.min.js"
+    - "bower_components/vega/vega.min.js"
+    - "bower_components/vega-lite/vega-lite.min.js"
+    - "bower_components/vega-embed/vega-embed.min.js"
